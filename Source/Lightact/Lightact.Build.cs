@@ -2,16 +2,14 @@
 
 using UnrealBuildTool;
 
-public class Lightact : ModuleRules
+public class LightAct : ModuleRules
 {
-	public Lightact(ReadOnlyTargetRules Target) : base(Target)
+	public LightAct(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
-				"Lightact/Public"
-				
 				// ... add public include paths required here ...
 			}
 			);
@@ -19,8 +17,6 @@ public class Lightact : ModuleRules
 		
 		PrivateIncludePaths.AddRange(
 			new string[] {
-				"Lightact/Private",
-				
 				// ... add other private include paths required here ...
 			}
 			);
@@ -30,7 +26,6 @@ public class Lightact : ModuleRules
 			new string[]
 			{
 				"Core",
-				
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -43,9 +38,6 @@ public class Lightact : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
-                "ApplicationCore",
-                "DesktopPlatform"
-
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
